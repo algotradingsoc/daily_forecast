@@ -30,6 +30,16 @@ The models will then be written into a homogeneous environment that can run smoo
 
 The Algosoc backtester will be used to test the models developed. Conclusions will be drawn to relate performance of each models to different assets, timeframes or other factors.
 
+## Models
+
+### Gaussian Processes
+
+A Gaussian process is a supervised learning method that assigns multvaritate normal distributions to each variable within a random variable collection. These models are controlled by covariance functions, and must be tailored to address specific prediction tasks.
+
+## Auto-regressive integrated moving average (ARIMA)
+
+An ARIMA model are fitted to time series to better understand the data or predict future points in the series. ARIMA models are applied whenever the condition of statistical stationarity is not met by the dataset. As an auto-regressive model, the variables of interest are regressed on their previous values, where the regression error is a linear combination of error terms whose values occurred at various times in the past.
+
 ## Literature Review
 
 ### Gaussian Processes
