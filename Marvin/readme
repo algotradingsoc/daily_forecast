@@ -1,1 +1,19 @@
-Correlation
+Triple Exponential Smoothing (Holt-Winters)
+  1. Overall smoothing
+  2. Trend smoothing 
+  3. Seasonal smoothing
+  
+Assumption: Apart from normal smoothing, stock prices are affected by trend (momentum) and seasonal patterns (greater demand in December?)
+
+Data needed: Any equity daily close price (e.g AAPL) or market index daily close price (e.g SPX)
+
+Python package: statsmodel 
+https://www.statsmodels.org/dev/generated/statsmodels.tsa.holtwinters.ExponentialSmoothing.html
+
+Approach: Fit Holt-Winters model using a single time-frame to get out regressors for forecasting
+
+Improvements: Compare triple exponential smoothing model with double/single exponential smoothing model to see which has the better fit
+Use ML to regress model at different time periods
+
+References:
+https://towardsdatascience.com/forecasting-stock-prices-using-exponential-smoothing-b37dfe54e8e9
